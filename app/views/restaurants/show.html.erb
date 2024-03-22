@@ -7,5 +7,6 @@
   <% end %>
 </ul>
 <%= render "restaurants/form", restaurants: @restaurants %>
+<%= link_to "Add a review", new_restaurant_review_path(@restaurant) %>
 <%= link_to "Back to all restaurants", restaurants_path %>
 </div>

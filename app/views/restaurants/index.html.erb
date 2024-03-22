@@ -1,8 +1,8 @@
 <div class="container">
   <h1> Restaurants</h1>
-    <% @restaurants.each do |restaurant| %>
-      <%=  link_to restaurant.name, restaurants_path(restaurant) %>
-    <% end %>
+    <%# @restaurants.each do |restaurant| %>
+      <%#=  link_to restaurant.name, restaurants_path(restaurant) %>
+    <%# end %>
   <%= render "restaurants/list", restaurants: @restaurants %>
   <%= link_to "Back to all restaurants", restaurants_path %>
 </div>
