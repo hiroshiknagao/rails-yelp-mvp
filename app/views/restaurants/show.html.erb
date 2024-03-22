@@ -1,2 +1,11 @@
+<div class="container"></div>
+<h1><%= @restaurant.name %></h1>
+<h3>All reviews for <%= @restaurant.name %></h3>
+<ul>
+  <% @restaurant.reviews.each do |review| %>
+    <li><%= review.content %></li>
+  <% end %>
+</ul>
 <%= render "restaurants/form", restaurants: @restaurants %>
 <%= link_to "Back to all restaurants", restaurants_path %>
+</div>

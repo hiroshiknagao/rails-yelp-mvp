@@ -1,0 +1,12 @@
+<div class="container">
+  <h1>Add Restaurant</h1>
+  <%= form_with model: @restaurant do |f| %>
+    <%= f.label :name %>
+    <%= f.text_field :name, calss: 'form-control' %>
+    <%= f.label :address %>
+    <%= f.text_field :address, calss: 'form-control' %>
+    <%= f.label :category %>
+    <%= f.text_field :category, calss: 'form-control' %>
+    <%= f.submit %>
+  <% end %>
+</div>
